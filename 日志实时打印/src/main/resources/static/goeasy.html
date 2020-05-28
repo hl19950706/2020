@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--[if lte IE 8]>//如果需要支持低版本的IE8及以下
+    <script type="text/javascript" src="https://cdn.goeasy.io/json2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="https://cdn.goeasy.io/goeasy-1.0.6.js"></script>
+</head>
+<script>
+    var goEasy = new GoEasy({
+        host:'hangzhou.goeasy.io', //应用所在的区域地址: 【hangzhou.goeasy.io |singapore.goeasy.io】
+        appkey: "my_appkey", //替换为您的应用appkey
+    });
+    //GoEasy-OTP可以对appkey进行有效保护,详情请参考​ ​
+    goEasy.subscribe({
+        channel: "my_channel", //替换为您自己的channel
+        onMessage: function (message) {
+            console.log("Channel:" + message.channel + " content:" + message.content);
+        }
+    });
+
+</script>
+<body>
+<div>
+    <
+</div>
+</body>
+</html>

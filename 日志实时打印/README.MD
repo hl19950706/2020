@@ -1,0 +1,4 @@
+socket和springboot包下的websocket可以运行成功
+socket运行需要启动WebSocketServer.main方法，启动websocket服务端才能连接上对应测试页面为log1.html
+springboot对应的页面为log3.html
+还有goEasy貌似更简单，不过要注册、配置就懒得弄了，官网有详细文档(注册之后会有回访电话，还要加微信啥的)
